@@ -1,0 +1,30 @@
+name: bloom-release
+on:
+  workflow_dispatch:
+
+jobs:
+  bloom-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: bloom release
+        uses: DavidMansolino/bloom-release-action@v0.0.12
+        with:
+          ros_distro: galactic
+          # github_token_bloom: ${{ secrets.GITHUB_TOKEN_BLOOM }}
+          github_token_bloom: ${{ github.token }}
+          github_user: ${{ github.actor }}
+          git_user: Nathan Edwards
+          git_email: nathan.edwards@greenroomrobotics.com
+          release_repository_push_url: https://github.com/${{ github.repository }}-release.git
+          version_branch: true
+          tag_and_release: true
+          # open_pr: true
+      - name: create release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.bloom_release.outputs.version }}
+          release_name: ${{ steps.bloom_release.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
