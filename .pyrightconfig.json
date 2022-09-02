@@ -1,0 +1,8 @@
+{
+  "typeCheckingMode": "basic",
+  "exclude": [
+    "**/external/**",
+    "**/build/**",
+    "**/install/**",
+  ]
+}

@@ -1,0 +1,22 @@
+name: Tag & Release - Private
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/greenroom-robotics/ros_builder:latest
+      options: --user root
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Semantic release
+        uses: Greenroom-Robotics/ros_semantic_release_action@main
+        with:
+          token: ${{ secrets.API_TOKEN_GITHUB }}
+          PACKAGES_DIRECTORY: maritime_interfaces

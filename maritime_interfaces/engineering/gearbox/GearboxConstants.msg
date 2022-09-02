@@ -1,0 +1,10 @@
+# GearboxConstants.msg
+
+int8 GEAR_REVERSE = -1
+int8 GEAR_NEUTRAL = 0
+int8 GEAR_FIRST = 1
+int8 GEAR_SECOND = 2
+int8 GEAR_THIRD = 3
+int8 GEAR_FOURTH = 4
+int8 GEAR_FIFTH = 5
+int8 GEAR_SIXTH = 6

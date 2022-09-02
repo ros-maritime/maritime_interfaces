@@ -1,0 +1,3 @@
+[submodule "maritime_interfaces/sensors/hydrographic_msgs"]
+	path = maritime_interfaces/sensors/hydrographic_msgs
+	url = git@github.com:apl-ocean-engineering/hydrographic_msgs.git

@@ -1,4 +1,4 @@
-name: bloom-release
+name: Tag & Release - Public
 on:
   workflow_dispatch:
 
