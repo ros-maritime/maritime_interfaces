@@ -19,4 +19,4 @@ jobs:
         uses: Greenroom-Robotics/ros_semantic_release_action@main
         with:
           token: ${{ secrets.API_TOKEN_GITHUB }}
-          PACKAGES_DIRECTORY: maritime_interfaces
+          packages_directory: maritime_interfaces
