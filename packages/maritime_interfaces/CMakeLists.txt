@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(maritime_interfaces_manouvre)
+project(maritime_interfaces)
 
 # Generate messages
 find_package(ament_cmake_auto REQUIRED)
