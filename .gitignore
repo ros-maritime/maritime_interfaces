@@ -10,3 +10,6 @@ build
 install
 .env
 .vscode
+.devcontainer
+Dockerfile
+docker-compose.yml

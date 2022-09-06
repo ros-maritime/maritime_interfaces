@@ -13,13 +13,6 @@
 
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
-  <depend>ais_msgs</depend>
-  <depend>notification_msgs</depend>
-  <depend>geofence_msgs</depend>
-  <depend>waypoint_msgs</depend>
-  <depend>perception_msgs</depend>
-  <depend>geolocation_msgs</depend>
-  <depend>network_monitoring_interfaces</depend>
 
   <exec_depend>rosidl_default_runtime</exec_depend>
 

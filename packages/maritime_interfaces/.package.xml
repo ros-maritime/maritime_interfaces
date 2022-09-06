@@ -7,12 +7,15 @@
   <maintainer email="team@greenroomrobotics.com">Greenroom Robotics</maintainer>
   <license>MIT</license>
 
-  <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <depend>maritime_interfaces_support</depend>
   <depend>maritime_interfaces_engineering</depend>
   <depend>maritime_interfaces_sensors</depend>
+  <depend>maritime_interfaces_manouvre</depend>
+  <depend>maritime_interfaces_communication</depend>
+  <depend>maritime_interfaces_situational_awareness</depend>
 
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

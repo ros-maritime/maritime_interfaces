@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(maritime_interfaces_manouvre)
+
+# Generate messages
+find_package(ament_cmake_auto REQUIRED)
+find_package(maritime_interfaces_support REQUIRED)
+find_package(maritime_interfaces_engineering REQUIRED)
+find_package(maritime_interfaces_sensors REQUIRED)
+find_package(maritime_interfaces_manouvre REQUIRED)
+find_package(maritime_interfaces_communication REQUIRED)
+find_package(maritime_interfaces_situational_awareness REQUIRED)
+
+ament_auto_find_build_dependencies()
+
+ament_auto_package()
