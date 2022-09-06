@@ -1,3 +1,0 @@
-[submodule "packages/sensors/hydrographic_msgs"]
-	path = packages/sensors/hydrographic_msgs
-	url = git@github.com:Greenroom-Robotics/hydrographic_msgs.git
